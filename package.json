@@ -1,0 +1,13 @@
+{
+  "name": "gh0re.grl",
+  "version": "1.0.0",
+  "description": "Holiiiii! ^_^",
+  "license": "ISC",
+  "author": "",
+  "private": true,
+  "type": "commonjs",
+  "main": "./backend/src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

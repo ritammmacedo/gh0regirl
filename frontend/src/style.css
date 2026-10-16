@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+nav ul * > a:hover {
+    font-weight: bold;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+.image-gallery-slide img {
+clip-path: inset(0 round 0.5rem);
+}  
+.image-gallery-thumbnails img {
+    border-radius: 0.5rem;
+}
+
+.image-gallery-thumbnails-container button {
+    border-radius: 0.8rem;
+}

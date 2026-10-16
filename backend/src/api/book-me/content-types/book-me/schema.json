@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_mes",
+  "info": {
+    "singularName": "book-me",
+    "pluralName": "book-mes",
+    "displayName": "Book Me"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "private": true,
+      "required": true
+    },
+    "Location": {
+      "type": "string",
+      "private": true,
+      "required": true
+    },
+    "Type": {
+      "type": "enumeration",
+      "private": true,
+      "required": true,
+      "enum": [
+        "Performance",
+        "Piercings",
+        "Needle Play",
+        "Misc"
+      ]
+    },
+    "Availability": {
+      "type": "datetime",
+      "private": true,
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "Type"
+            },
+            "Piercings"
+          ]
+        }
+      }
+    },
+    "Message": {
+      "type": "richtext",
+      "private": true,
+      "required": true
+    },
+    "Notes": {
+      "type": "richtext",
+      "private": true
+    }
+  }
+}
