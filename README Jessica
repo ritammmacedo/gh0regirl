@@ -1,0 +1,37 @@
+Holiiiii! ^_^
+
+Acho que tenho um exemplo com o que precisas para que percebas os pedidos ajax com o strapi.
+
+Antes de experimentares, tens que fazer npm install nas duas pastas (react-frontend e strapi-backend).
+Quando instales tudo, podes então correr os dois ao mesmo tempo e experientas.
+
+Começando no strapi, depois do install, faz:
+
+npm run build (para montar o painel de admin segundo os content types que existem e para que possas aceder a ele)
+npm run dev
+ou 
+npm run start
+
+O dev é no modo de development onde podes adicionar mais content-types e tens mais control das cenas,
+o start seria em modo de producção, podes adicionar conteudo porem nao podes tocar nos content types.
+
+A base de dados desta instancia do strapi está criada localmente (na pasta .tmp/) automaticamente pelo
+instalador do strapi e tem os dados de exemplo deles.
+
+Podes aceder ao painel de admin com os dados:
+
+URL: http://localhost:8080/admin (ou o link que te der quando fizeres o dev ou start)
+Email: email@email.comm
+Pass: ThisIsApassword123
+
+----
+
+Passando ao react-frontend, onde mostro como fazer os requests de ajax, depois do strapi estar a correr, vais correr o frontend com:
+
+npm run dev
+
+e podes entao aceder com o url: http://localhost:5173
+
+Depois já podes ver o código fonte (/src/) e tentar encontrar a lógica da cena.
+
+Qualquer duvida, avisa ^_^
